@@ -36,7 +36,7 @@ export default function Skills() {
           {skills.map((skill) => (
             <div
               key={skill}
-              className="rounded-xl border border-slate-800 bg-slate-900 p-5 text-center font-medium transition hover:-translate-y-1 hover:border-cyan-500"
+              className="rounded-xl border border-slate-800 bg-slate-900 p-6 transition duration-300 hover:-translate-y-2 hover:border-cyan-500 hover:shadow-xl border border-slate-800 bg-slate-900 p-5 text-center font-medium transition hover:-translate-y-1 hover:border-cyan-500"
             >
               {skill}
             </div>

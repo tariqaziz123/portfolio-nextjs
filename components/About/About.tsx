@@ -57,7 +57,7 @@ function Card({
   value: string;
 }) {
   return (
-    <div className="rounded-xl border border-slate-800 bg-slate-900 p-6 hover:border-cyan-500 transition">
+    <div className="rounded-xl border border-slate-800 bg-slate-900 p-6 transition duration-300 hover:-translate-y-2 hover:border-cyan-500 hover:shadow-xl border border-slate-800 bg-slate-900 p-6 hover:border-cyan-500 transition">
       <h4 className="text-lg font-semibold">
         {title}
       </h4>
