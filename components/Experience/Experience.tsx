@@ -16,7 +16,7 @@ export default function Experience() {
               {/* Header */}
               <div className="flex flex-col justify-between gap-4 md:flex-row">
                 <div>
-                  <h3 className="text-2xl font-bold text-white">
+                  <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
                     {experience.role}
                   </h3>
 
@@ -30,7 +30,7 @@ export default function Experience() {
 
                   {"project" in experience && experience.project && (
                     <p className="mt-2 text-sm text-slate-300">
-                      <span className="font-semibold text-white">
+                      <span className="font-semibold text-slate-900 dark:text-white">
                         Project:
                       </span>{" "}
                       {experience.project}
@@ -53,7 +53,7 @@ export default function Experience() {
                 experience.projects &&
                 experience.projects.length > 0 && (
                   <div className="mt-8">
-                    <h4 className="mb-4 text-lg font-semibold text-white">
+                    <h4 className="mb-4 text-lg font-semibold text-slate-900 dark:text-white">
                       Key Projects
                     </h4>
 
@@ -61,7 +61,7 @@ export default function Experience() {
                       {experience.projects.map((project) => (
                         <div
                           key={project.name}
-                          className="rounded-xl border border-slate-800 bg-slate-900 p-6 transition duration-300 hover:-translate-y-2 hover:border-cyan-500 hover:shadow-xl border border-slate-800 bg-slate-950 p-5"
+                          className="rounded-xl border border-slate-800 bg-slate-900 p-6 transition duration-300 hover:-translate-y-2 hover:border-cyan-500 hover:shadow-xl border border-slate-800 bg-white dark:bg-slate-950 p-5"
                         >
                           <h5 className="font-semibold text-cyan-400">
                             {project.name}

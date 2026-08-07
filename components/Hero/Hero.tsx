@@ -23,7 +23,7 @@ export default function Hero() {
             Hello, I'm
           </p>
 
-          <h1 className="mt-3 text-5xl font-bold leading-tight text-white md:text-7xl">
+          <h1 className="mt-3 text-5xl font-bold leading-tight text-slate-900 dark:text-white md:text-7xl">
             Tariq Aziz
           </h1>
 

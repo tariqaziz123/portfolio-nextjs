@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import clsx from "clsx";
 import { FaBars, FaTimes } from "react-icons/fa";
+import ThemeToggle from "@/components/Theme/ThemeToggle";
 import MobileMenu from "./MobileMenu";
 import { navLinks } from "./navLinks";
 
@@ -48,14 +49,14 @@ export default function Navbar() {
         className={clsx(
           "fixed left-0 top-0 z-50 w-full transition-all duration-300",
           scrolled
-            ? "border-b border-slate-800 bg-slate-950/90 backdrop-blur-lg shadow-lg"
+            ? "border-b border-slate-800 bg-white dark:bg-slate-950/90 backdrop-blur-lg shadow-lg"
             : "bg-transparent"
         )}
       >
         <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-6">
           <a
             href="/"
-            className="text-2xl font-bold text-white"
+            className="text-2xl font-bold text-slate-900 dark:text-white"
           >
             Tariq Aziz
           </a>
@@ -76,6 +77,7 @@ export default function Navbar() {
               </a>
             ))}
 
+            <ThemeToggle />
             <a
               href="/resume.pdf"
               download
@@ -84,16 +86,17 @@ export default function Navbar() {
               Resume
             </a>
           </nav>
-
+          <div className="flex items-center gap-4 md:hidden">
+          <ThemeToggle />
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="text-2xl text-white md:hidden"
+            className="text-2xl text-slate-900 dark:text-white md:hidden"
           >
             {menuOpen ? <FaTimes /> : <FaBars />}
           </button>
+          </div>
         </div>
       </header>
-
       <MobileMenu
         isOpen={menuOpen}
         closeMenu={() => setMenuOpen(false)}

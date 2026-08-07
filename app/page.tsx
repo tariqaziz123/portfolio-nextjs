@@ -34,24 +34,6 @@ export default function Home() {
       <FadeIn>
         <Footer />
       </FadeIn>
-      <FadeIn>
-      <About />
-      </FadeIn>
-      <FadeIn>
-        <Skills />
-      </FadeIn>
-      <FadeIn>
-        <Experience />
-      </FadeIn>
-      <FadeIn>
-        <Projects />
-      </FadeIn>
-      <FadeIn>
-        <Contact />
-      </FadeIn>
-      <FadeIn>
-        <Footer />
-      </FadeIn>
       <ScrollToTop />
     </main>
   );

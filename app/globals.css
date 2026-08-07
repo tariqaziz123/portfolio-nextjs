@@ -1,9 +1,12 @@
 @import "tailwindcss";
 
+/* Tailwind v4 dark mode support */
+@custom-variant dark (&:where(.dark, .dark *));
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  @apply bg-slate-950 text-white;
+  @apply bg-white dark:bg-slate-950 text-slate-900 dark:text-white;
 }

@@ -15,7 +15,7 @@ export default function MobileMenu({
   return (
     <div
       className={clsx(
-        "fixed top-[72px] left-0 right-0 z-40 bg-slate-950 border-b border-slate-800 transition-all duration-300 md:hidden",
+        "fixed top-[72px] left-0 right-0 z-40 bg-white dark:bg-slate-950 border-b border-slate-800 transition-all duration-300 md:hidden",
         isOpen
           ? "translate-y-0 opacity-100"
           : "-translate-y-full opacity-0 pointer-events-none"
