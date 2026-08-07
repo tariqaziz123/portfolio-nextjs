@@ -1,56 +1,24 @@
-import SectionTitle from "../SectionTitle/SectionTitle";
-import { projects } from "../../assets/data/projects";
+import SectionTitle from "@/components/SectionTitle/SectionTitle";
+
+import { projects } from "@/components/data/projects";
+
+import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
   return (
-    <section id="projects" className="bg-slate-900/40 py-24">
-      <div className="mx-auto max-w-6xl px-6">
+    <section id="projects">
+      <SectionTitle
+        title="Projects"
+        subtitle="Enterprise applications I've built across Travel Tech, Financial Services, Analytics, and Real-Time Collaboration."
+      />
 
-        <SectionTitle
-          title="Projects"
-          subtitle="Featured Work"
-        />
-
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-
-          {projects.map((project) => (
-            <div
-              key={project.title}
-              className="rounded-xl border border-slate-800 bg-slate-900 p-6 transition duration-300 hover:-translate-y-2 hover:border-cyan-500 hover:shadow-xl border border-slate-800 bg-slate-900 p-6 transition hover:-translate-y-2 hover:border-cyan-500"
-            >
-              <h3 className="text-xl font-bold">
-                {project.title}
-              </h3>
-
-              <p className="mt-2 text-cyan-400">
-                {project.tech}
-              </p>
-
-              <p className="mt-4 text-slate-400">
-                {project.description}
-              </p>
-
-              <div className="mt-6 flex gap-4">
-                <a
-                  href={project.github}
-                  className="rounded-lg border border-slate-700 px-4 py-2"
-                >
-                  GitHub
-                </a>
-
-                <a
-                  href={project.live}
-                  className="rounded-lg bg-cyan-500 px-4 py-2 text-black"
-                >
-                  Live Demo
-                </a>
-              </div>
-
-            </div>
-          ))}
-
-        </div>
-
+      <div className="mt-16 grid gap-10 lg:grid-cols-2">
+        {projects.map((project) => (
+          <ProjectCard
+            key={project.slug}
+            project={project}
+          />
+        ))}
       </div>
     </section>
   );
