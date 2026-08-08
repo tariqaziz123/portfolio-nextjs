@@ -1,105 +1,126 @@
-"use client";
-
 import Image from "next/image";
-import Link from "next/link";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaEnvelope,
-  FaDownload,
-} from "react-icons/fa";
-import { socialLinks } from "@/constants/socialLinks";
+import HeroButtons from "./HeroButtons";
+import TechBadges from "./TechBadges";
+import ScrollIndicator from "./ScrollIndicator";
+import ProfileImage from "@/public/images/profile.jpg";
 
 export default function Hero() {
   return (
     <section
       id="home"
-      className="flex min-h-[calc(100vh-72px)] items-center"
+      className="relative overflow-hidden"
     >
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-2">
-        {/* Left Content */}
-        <div>
-          <p className="text-lg font-medium text-cyan-400">
-            Hello, I'm
-          </p>
+      {/* Background Effects */}
 
-          <h1 className="mt-3 text-5xl font-bold leading-tight text-slate-900 dark:text-white md:text-7xl">
-            Tariq Aziz
+      <div className="absolute left-0 top-0 h-80 w-80 rounded-full bg-cyan-500/10 blur-3xl" />
+
+      <div className="absolute right-0 top-40 h-96 w-96 rounded-full bg-blue-500/10 blur-3xl" />
+
+      <div className="absolute bottom-0 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-indigo-500/10 blur-3xl" />
+
+      <div className="mx-auto grid min-h-screen max-w-7xl items-center gap-16 px-6 pt-20 lg:grid-cols-2">
+
+        {/* LEFT */}
+
+        <div>
+
+          <span className="inline-flex items-center rounded-full border border-cyan-500/30 bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-400">
+            👋 Hello, I'm
+          </span>
+
+          <h1 className="mt-8 text-5xl font-extrabold leading-tight md:text-7xl">
+            Tariq{" "}
+            <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500 bg-clip-text text-transparent">
+              Aziz
+            </span>
           </h1>
 
-          <h2 className="mt-5 text-2xl font-semibold text-slate-300 md:text-3xl">
-            Frontend Engineer
+          <h2 className="mt-6 text-2xl font-semibold text-slate-300 md:text-3xl">
+            Senior Frontend Engineer
           </h2>
 
-          <p className="mt-6 max-w-xl text-lg leading-8 text-slate-400">
-            Frontend Engineer with 4.5+ years of experience building
-            scalable enterprise applications using React.js, Next.js,
-            TypeScript, Redux Toolkit, GraphQL, and modern frontend
-            technologies.
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-400">
+            I build scalable enterprise web applications using
+            <span className="font-semibold text-cyan-400">
+              {" "}React.js
+            </span>,
+            <span className="font-semibold text-cyan-400">
+              {" "}Next.js
+            </span>,
+            <span className="font-semibold text-cyan-400">
+              {" "}TypeScript
+            </span>
+            {" "}and modern frontend architecture with a strong
+            focus on performance, accessibility, and user
+            experience.
           </p>
 
-          {/* Buttons */}
-          <div className="mt-10 flex flex-wrap gap-4">
-            <a
-              href="#projects"
-              className="rounded-lg bg-cyan-500 px-6 py-3 font-semibold transition-all duration-300 hover:scale-105 hover:bg-cyan-400"
-            >
-              View Projects
-            </a>
+          <HeroButtons />
 
-            <a
-              href={socialLinks.resume}
-              download
-              className="rounded-lg bg-cyan-500 px-6 py-3 font-semibold transition-all duration-300 hover:scale-105 hover:bg-cyan-400"
-            >
-              <FaDownload />
-              Resume
-            </a>
-          </div>
+          <TechBadges />
 
-          {/* Social Icons */}
-          <div className="mt-10 flex items-center gap-5">
-            <Link
-              href={socialLinks.github}
-              target="_blank"
-              aria-label="GitHub"
-              className="transition-transform duration-300 hover:scale-125"
-            >
-              <FaGithub />
-            </Link>
-
-            <Link
-              href={socialLinks.linkedin}
-              target="_blank"
-              aria-label="LinkedIn"
-              className="transition-transform duration-300 hover:scale-125"
-            >
-              <FaLinkedin />
-            </Link>
-
-            <Link
-              href={socialLinks.email}
-              aria-label="Email"
-              className="transition-transform duration-300 hover:scale-125"
-            >
-              <FaEnvelope />
-            </Link>
-          </div>
         </div>
 
-        {/* Right Content */}
-        <div className="flex justify-center">
-          <div className="relative h-80 w-80 overflow-hidden rounded-full border-4 border-cyan-500 shadow-[0_0_40px_rgba(6,182,212,0.35)] md:h-[420px] md:w-[420px]">
-            <Image
-              src="/images/profile.jpg"
-              alt="Tariq Aziz"
-              fill
-              priority
-              className="object-cover"
-            />
+        {/* RIGHT */}
+
+        <div className="flex justify-center lg:justify-end">
+
+          <div className="relative">
+
+            {/* Glow */}
+
+            <div className="absolute inset-0 rounded-full bg-cyan-500/20 blur-3xl" />
+
+            {/* Ring */}
+
+            <div className="absolute -inset-4 rounded-full border border-cyan-500/20" />
+
+            {/* Image */}
+
+            <div className="relative h-80 w-80 overflow-hidden rounded-full border-4 border-cyan-500/20 shadow-2xl md:h-96 md:w-96">
+
+              <Image
+                src={ProfileImage}
+                alt="Tariq Aziz"
+                fill
+                priority
+                className="object-cover"
+              />
+
+            </div>
+
+            {/* Experience Badge */}
+
+            <div className="absolute -left-10 top-10 rounded-2xl border border-slate-700 bg-slate-900/80 px-5 py-3 backdrop-blur">
+
+              <p className="text-3xl font-bold text-cyan-400">
+                4.5+
+              </p>
+
+              <p className="text-sm text-slate-400">
+                Years Experience
+              </p>
+
+            </div>
+
+            {/* Availability Badge */}
+
+            <div className="absolute -bottom-6 right-0 rounded-2xl border border-green-500/30 bg-slate-900/80 px-5 py-3 backdrop-blur">
+
+              <p className="font-semibold text-green-400">
+                ● Available for Hire
+              </p>
+
+            </div>
+
           </div>
+
         </div>
+
       </div>
+
+      <ScrollIndicator />
+
     </section>
   );
 }
