@@ -36,7 +36,7 @@ export default function Hero() {
           </h1>
 
           <h2 className="mt-6 text-2xl font-semibold text-slate-300 md:text-3xl">
-            Senior Frontend Engineer
+            Senior Frontend Engineer • React.js • Next.js • TypeScript
           </h2>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-400">
@@ -73,11 +73,11 @@ export default function Hero() {
 
             {/* Ring */}
 
-            <div className="absolute -inset-4 rounded-full border border-cyan-500/20" />
+            <div className="absolute inset-0 animate-[spin_20s_linear_infinite] rounded-full bg-gradient-to-r from-cyan-500/20 via-blue-500/20 to-indigo-500/20 blur-2xl" />
 
             {/* Image */}
 
-            <div className="relative h-80 w-80 overflow-hidden rounded-full border-4 border-cyan-500/20 shadow-2xl md:h-96 md:w-96">
+            <div className="relative h-80 w-80 overflow-hidden rounded-full border-[6px] border-white/10 shadow-[0_0_50px_rgba(6,182,212,0.25)]">
 
               <Image
                 src={ProfileImage}
@@ -91,7 +91,7 @@ export default function Hero() {
 
             {/* Experience Badge */}
 
-            <div className="absolute -left-10 top-10 rounded-2xl border border-slate-700 bg-slate-900/80 px-5 py-3 backdrop-blur">
+            <div className="absolute -left-10 top-10 rounded-2xl ... animate-[float_4s_ease-in-out_infinite]">
 
               <p className="text-3xl font-bold text-cyan-400">
                 4.5+
@@ -105,7 +105,7 @@ export default function Hero() {
 
             {/* Availability Badge */}
 
-            <div className="absolute -bottom-6 right-0 rounded-2xl border border-green-500/30 bg-slate-900/80 px-5 py-3 backdrop-blur">
+            <div className="absolute -bottom-6 right-0 ... animate-[float_5s_ease-in-out_infinite]">
 
               <p className="font-semibold text-green-400">
                 ● Available for Hire
