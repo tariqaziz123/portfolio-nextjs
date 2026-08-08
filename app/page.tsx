@@ -8,6 +8,7 @@ import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 import FadeIn from "@/components/Layout/FadeIn";
 import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
+import Stats from "@/components/Stats/Stats";
 
 export default function Home() {
   return (
@@ -15,6 +16,9 @@ export default function Home() {
       <Navbar />
       <FadeIn>
         <Hero />
+      </FadeIn>
+      <FadeIn>
+        <Stats />
       </FadeIn>
       <FadeIn>
         <About />

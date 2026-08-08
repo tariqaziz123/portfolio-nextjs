@@ -1,47 +1,28 @@
+import { skillCategories } from "@/components/data/skills";
+import SkillCard from "./SkillCard";
 import SectionTitle from "../SectionTitle/SectionTitle";
-
-const skills = [
-  "React",
-  "Next.js",
-  "JavaScript",
-  "TypeScript",
-  "Redux Toolkit",
-  "Tailwind CSS",
-  "HTML5",
-  "CSS3",
-  "Material UI",
-  "Node.js",
-  "Express.js",
-  "MongoDB",
-  "Git",
-  "REST API",
-  "GraphQL",
-];
 
 export default function Skills() {
   return (
     <section
       id="skills"
-      className="py-24 bg-slate-900/40"
+      className="py-24"
     >
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-7xl px-6">
 
         <SectionTitle
-          title="Skills"
-          subtitle="Technologies"
+          title="Skills & Technologies"
+          subtitle="Technologies and tools I use to build scalable enterprise applications."
         />
 
-        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-
-          {skills.map((skill) => (
-            <div
-              key={skill}
-              className="rounded-xl border border-slate-800 bg-slate-900 p-6 transition duration-300 hover:-translate-y-2 hover:border-cyan-500 hover:shadow-xl border border-slate-800 bg-slate-900 p-5 text-center font-medium transition hover:-translate-y-1 hover:border-cyan-500"
-            >
-              {skill}
-            </div>
+        <div className="mt-16 grid gap-6 lg:grid-cols-2">
+          {skillCategories.map((category) => (
+            <SkillCard
+              key={category.title}
+              title={category.title}
+              skills={category.skills}
+            />
           ))}
-
         </div>
 
       </div>
