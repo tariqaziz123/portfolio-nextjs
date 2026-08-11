@@ -6,7 +6,18 @@ export default function HeroButtons() {
     <div className="mt-10 flex flex-wrap gap-4">
       <Link
         href="/#projects"
-        className="inline-flex items-center gap-2 rounded-xl bg-cyan-500 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-400"
+        className="
+        rounded-xl
+        bg-cyan-500
+        px-6
+        py-3
+        font-semibold
+        transition-all
+        duration-300
+        hover:-translate-y-1
+        hover:bg-cyan-400
+        hover:shadow-[0_10px_30px_rgba(6,182,212,0.35)]
+        "
       >
         <FolderOpen size={18} />
         View Projects

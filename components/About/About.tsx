@@ -2,13 +2,13 @@ import SectionHeading from "@/components/SectionTitle/SectionTitle";
 import AboutHighlights from "./AboutHighlights";
 import AboutImage from "./AboutImage";
 import FadeIn from "../Layout/FadeIn";
+import SectionWrapper from "../Common/SectionWrapper";
 
 export default function About() {
   return (
     <FadeIn>
-      <section
+      <SectionWrapper
         id="about"
-        className="py-24"
       >
         <div className="mx-auto max-w-7xl px-6">
 
@@ -55,7 +55,7 @@ export default function About() {
           </div>
 
         </div>
-      </section>
+      </SectionWrapper>
     </FadeIn>
   );
 }

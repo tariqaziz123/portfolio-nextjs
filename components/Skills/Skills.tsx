@@ -2,13 +2,14 @@ import { skillCategories } from "@/components/data/skills";
 import SkillCard from "./SkillCard";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import FadeIn from "../Layout/FadeIn";
+import SectionWrapper from "../Common/SectionWrapper";
 
 export default function Skills() {
   return (
     <FadeIn delay={0.1}>
-      <section
+      <SectionWrapper
         id="skills"
-        className="py-24"
+        alternate
       >
         <div className="mx-auto max-w-7xl px-6">
 
@@ -28,7 +29,7 @@ export default function Skills() {
           </div>
 
         </div>
-      </section>
+      </SectionWrapper>
     </FadeIn>
   );
 }

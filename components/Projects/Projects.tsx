@@ -4,11 +4,12 @@ import { projects } from "@/components/data/projects";
 
 import ProjectCard from "./ProjectCard";
 import FadeIn from "../Layout/FadeIn";
+import SectionWrapper from "../Common/SectionWrapper";
 
 export default function Projects() {
   return (
     <FadeIn delay={0.3}>
-      <section id="projects">
+      <SectionWrapper id="projects">
         <SectionTitle
           title="Projects"
           subtitle="Enterprise applications I've built across Travel Tech, Financial Services, Analytics, and Real-Time Collaboration."
@@ -22,7 +23,7 @@ export default function Projects() {
             />
           ))}
         </div>
-      </section>
+      </SectionWrapper>
     </FadeIn>
   );
 }

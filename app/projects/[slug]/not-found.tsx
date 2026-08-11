@@ -18,7 +18,18 @@ export default function NotFound() {
 
       <Link
         href="/#projects"
-        className="mt-10 rounded-xl bg-cyan-500 px-8 py-4 font-semibold text-black"
+        className="
+        rounded-xl
+        border
+        border-slate-700
+        px-6
+        py-3
+        transition-all
+        duration-300
+        hover:border-cyan-500
+        hover:text-cyan-400
+        hover:-translate-y-1
+        "
       >
         Back to Projects
       </Link>

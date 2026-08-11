@@ -81,7 +81,18 @@ export default function Navbar() {
             <a
               href="/resume.pdf"
               download
-              className="rounded-lg bg-cyan-500 px-5 py-2 font-medium text-black transition hover:bg-cyan-400"
+              className="
+              rounded-xl
+              bg-cyan-500
+              px-6
+              py-3
+              font-semibold
+              transition-all
+              duration-300
+              hover:-translate-y-1
+              hover:bg-cyan-400
+              hover:shadow-[0_10px_30px_rgba(6,182,212,0.35)]
+              "
             >
               Resume
             </a>

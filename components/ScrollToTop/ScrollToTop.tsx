@@ -28,7 +28,18 @@ export default function ScrollToTop() {
           behavior: "smooth",
         })
       }
-      className="rounded-lg bg-cyan-500 px-6 py-3 font-semibold transition-all duration-300 hover:scale-105 hover:bg-cyan-400"
+      className="
+      rounded-xl
+      border
+      border-slate-700
+      px-6
+      py-3
+      transition-all
+      duration-300
+      hover:border-cyan-500
+      hover:text-cyan-400
+      hover:-translate-y-1
+      "
     >
       <FaArrowUp />
     </button>

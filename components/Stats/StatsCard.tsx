@@ -26,6 +26,11 @@ export default function StatsCard({
         transition-all
         duration-300
         hover:-translate-y-2
+hover:scale-[1.02]
+hover:border-cyan-500/40
+hover:shadow-[0_20px_60px_rgba(6,182,212,0.12)]
+transition-all
+duration-300
         hover:border-cyan-500
         hover:shadow-[0_10px_40px_rgba(6,182,212,0.15)]
       "
