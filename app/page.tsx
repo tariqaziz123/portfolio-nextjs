@@ -9,7 +9,6 @@ import Footer from "@/components/Footer/Footer";
 import FadeIn from "@/components/Layout/FadeIn";
 import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
 import Stats from "@/components/Stats/Stats";
-import Timeline from "@/components/Experience/Timeline";
 
 export default function Home() {
   return (
@@ -29,9 +28,6 @@ export default function Home() {
       </FadeIn>
       <FadeIn>
         <Experience />
-      </FadeIn>
-      <FadeIn>
-        <Timeline />
       </FadeIn>
       <FadeIn>
         <Projects />
