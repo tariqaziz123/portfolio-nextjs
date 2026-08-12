@@ -1,3 +1,8 @@
+"use client";
+
+import { useMemo, useState } from "react";
+
+import ProjectFilter from "./ProjectFilter";
 import SectionTitle from "@/components/SectionTitle/SectionTitle";
 
 import { projects } from "@/components/data/projects";
@@ -9,6 +14,13 @@ import FeaturedProject from "./FeaturedProject";
 
 export default function Projects() {
 
+  const categories = [
+    "All",
+    ...new Set(projects.map((p) => p.domain)),
+  ];
+
+  const [selected, setSelected] = useState("All");
+
   const featuredProject = projects.find(
     (project) => project.featured
   );
@@ -16,6 +28,14 @@ export default function Projects() {
   const otherProjects = projects.filter(
     (project) => !project.featured
   );
+
+  const filteredProjects = useMemo(() => {
+    if (selected === "All") return otherProjects;
+
+    return otherProjects.filter(
+      (project) => project.domain === selected
+    );
+  }, [selected, otherProjects]);
 
   return (
     <FadeIn delay={0.3}>
@@ -29,8 +49,16 @@ export default function Projects() {
           <FeaturedProject project={featuredProject} />
         )}
 
-        <div className="mt-16 grid gap-10 lg:grid-cols-2">
-          {otherProjects.map((project) => (
+        <div className="mt-16 flex flex-col items-center justify-center">
+          <ProjectFilter
+          categories={categories}
+          selected={selected}
+          onChange={setSelected}
+        />
+        </div>
+        <div className="mt-0 grid gap-10 lg:grid-cols-2">
+          
+          {filteredProjects.map((project) => (
             <ProjectCard
               key={project.slug}
               project={project}

@@ -8,6 +8,7 @@ export const projects: Project[] = [
     featured: true,
 
     category: "Travel Tech",
+    domain: "Travel",
 
     duration: "Jan 2026 - Apr 2026",
 
@@ -68,6 +69,7 @@ export const projects: Project[] = [
     featured: false,
 
     category: "Financial Services",
+    domain: "Finance",
 
     duration: "2023 - 2025",
 
@@ -123,6 +125,7 @@ export const projects: Project[] = [
 
     title: "Whiteboard.chat",
     featured: false,
+    domain: "Collaboration",
 
     category: "Real-Time Collaboration",
 
@@ -179,6 +182,7 @@ export const projects: Project[] = [
 
     title: "Capability Radar",
     featured: false,
+    domain: "Analytics",
 
     category: "Analytics",
 

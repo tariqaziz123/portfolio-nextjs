@@ -1,16 +1,18 @@
-export interface Project {
+export type Project = {
   slug: string;
   title: string;
   featured: boolean;
+
   category: string;
+
+  domain: string; // 👈 NEW
+
   duration: string;
   client: string;
 
-  icon: string;
-  gradient: string;
-
   image?: string;
-  gallery?: string[];
+  icon?: string;
+  gradient?: string;
 
   overview: string;
   problem: string;
@@ -21,4 +23,6 @@ export interface Project {
   technologies: string[];
   features: string[];
   challenges: string[];
-}
+
+  gallery?: string[];
+};
