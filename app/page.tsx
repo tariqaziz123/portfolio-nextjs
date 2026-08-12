@@ -8,6 +8,7 @@ import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
 import Stats from "@/components/Stats/Stats";
+import CTA from "@/components/CTA/CTA";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Skills />
       <Experience />
       <Projects />
+      <CTA />
       <Contact />
       <Footer />
       <ScrollToTop />
