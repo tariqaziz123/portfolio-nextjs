@@ -5,6 +5,7 @@ export const projects: Project[] = [
     slug: "musafir",
 
     title: "Musafir",
+    featured: true,
 
     category: "Travel Tech",
 
@@ -64,6 +65,7 @@ export const projects: Project[] = [
     slug: "newcleus",
 
     title: "Newcleus",
+    featured: false,
 
     category: "Financial Services",
 
@@ -120,6 +122,7 @@ export const projects: Project[] = [
     slug: "whiteboard-chat",
 
     title: "Whiteboard.chat",
+    featured: false,
 
     category: "Real-Time Collaboration",
 
@@ -175,6 +178,7 @@ export const projects: Project[] = [
     slug: "capability-radar",
 
     title: "Capability Radar",
+    featured: false,
 
     category: "Analytics",
 

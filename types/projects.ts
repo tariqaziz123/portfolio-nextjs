@@ -1,6 +1,7 @@
 export interface Project {
   slug: string;
   title: string;
+  featured: boolean;
   category: string;
   duration: string;
   client: string;
