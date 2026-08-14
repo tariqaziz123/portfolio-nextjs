@@ -26,7 +26,7 @@ export const projects: Project[] = [
 
     client: "Personal Project",
 
-    image: "/projects/skillgraph-ai/cover.png",
+    image: "/projects/skillgraph-ai/home.png",
 
     overview:
       "SkillGraph AI is a full-stack web application that helps users discover developers, explore their skills, projects, technologies, and companies, while providing graph-powered developer recommendations using a Neo4j-compatible graph database.",
@@ -79,11 +79,11 @@ export const projects: Project[] = [
     ],
 
     gallery: [
-      "/projects/skillgraph-ai/1.png",
-      "/projects/skillgraph-ai/2.png",
-      "/projects/skillgraph-ai/3.png",
-      "/projects/skillgraph-ai/4.png",
-      "/projects/skillgraph-ai/5.png",
+      "/projects/skillgraph-ai/home.png",
+      "/projects/skillgraph-ai/companies.png",
+      "/projects/skillgraph-ai/developer.png",
+      "/projects/skillgraph-ai/skills.png",
+      "/projects/skillgraph-ai/technologies.png",
     ],
   },
 
