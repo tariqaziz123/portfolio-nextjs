@@ -12,6 +12,7 @@ import TechnologyBadge from "@/components/Projects/TechnologyBadge";
 import FeatureList from "@/components/Projects/FeatureList";
 import ChallengeList from "@/components/Projects/ChallengeList";
 import Gallery from "@/components/Projects/Gallery";
+import ProjectInfo from "@/components/Projects/ProjectInfo";
 
 type Props = {
   params: Promise<{
@@ -107,6 +108,7 @@ export default async function ProjectPage({
           >
             <p>{project.overview}</p>
           </ProjectSection>
+          <ProjectInfo project={project} />
 
           <ProjectSection
             id="problem"

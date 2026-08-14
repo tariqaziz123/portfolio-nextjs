@@ -21,17 +21,13 @@ export type Project = {
   technologies: string[];
   features: string[];
   challenges: string[];
-  icon?: string;
-  gradient?: string;
 
   gallery?: string[];
 
-  // NEW
   github?: string;
   live?: string;
   backend?: string;
 
-  status?: "Completed" | "In Progress";
-
+  status?: string;
   teamSize?: string;
 };
