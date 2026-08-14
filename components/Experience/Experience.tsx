@@ -3,6 +3,8 @@ import { experiences } from "@/components/data/experience";
 import TimelineItem from "./TimelineItem";
 import FadeIn from "../Layout/FadeIn";
 import SectionWrapper from "../Common/SectionWrapper";
+import StaggerContainer from "../Common/StaggerContainer";
+import StaggerItem from "../Common/StaggerItem";
 
 export default function Experience() {
   return (
@@ -17,17 +19,19 @@ export default function Experience() {
             subtitle="My professional journey building scalable enterprise applications."
           />
 
-          <div className="mt-20">
+          <StaggerContainer>
 
             {experiences.map((experience, index) => (
-              <TimelineItem
-                key={`${experience.company}-${experience.duration}`}
-                experience={experience}
-                isLast={index === experiences.length - 1}
-              />
+              <StaggerItem key={`${experience.company}-${experience.duration}`}>
+                <TimelineItem
+                  key={`${experience.company}-${experience.duration}`}
+                  experience={experience}
+                  isLast={index === experiences.length - 1}
+                />
+              </StaggerItem>
             ))}
 
-          </div>
+          </StaggerContainer>
 
         </div>
       </SectionWrapper>

@@ -1,3 +1,5 @@
+import StaggerContainer from "../Common/StaggerContainer";
+import StaggerItem from "../Common/StaggerItem";
 import SkillChip from "./SkillChip";
 
 type Props = {
@@ -23,14 +25,16 @@ export default function SkillCard({
         {title}
       </h3>
 
-      <div className="flex flex-wrap gap-3">
+      <StaggerContainer>
         {skills.map((skill) => (
-          <SkillChip
-            key={skill}
-            skill={skill}
-          />
+          <StaggerItem key={skill}>
+            <SkillChip
+              key={skill}
+              skill={skill}
+            />
+          </StaggerItem>
         ))}
-      </div>
+      </StaggerContainer>
     </div>
   );
 }

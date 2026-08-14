@@ -11,6 +11,8 @@ import ProjectCard from "./ProjectCard";
 import FadeIn from "../Layout/FadeIn";
 import SectionWrapper from "../Common/SectionWrapper";
 import FeaturedProject from "./FeaturedProject";
+import StaggerContainer from "@/components/Common/StaggerContainer";
+import StaggerItem from "@/components/Common/StaggerItem";
 
 export default function Projects() {
 
@@ -48,20 +50,20 @@ export default function Projects() {
 
         <div className="mt-16 flex flex-col items-center justify-center">
           <ProjectFilter
-          categories={categories}
-          selected={selected}
-          onChange={setSelected}
-        />
+            categories={categories}
+            selected={selected}
+            onChange={setSelected}
+          />
         </div>
-        <div className="mt-0 grid gap-10 lg:grid-cols-2">
-          
-          {filteredProjects.map((project) => (
-            <ProjectCard
-              key={project.slug}
-              project={project}
-            />
-          ))}
-        </div>
+        <StaggerContainer>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {filteredProjects.map((project) => (
+              <StaggerItem key={project.slug}>
+                <ProjectCard project={project} />
+              </StaggerItem>
+            ))}
+          </div>
+        </StaggerContainer>
       </SectionWrapper>
     </FadeIn>
   );
