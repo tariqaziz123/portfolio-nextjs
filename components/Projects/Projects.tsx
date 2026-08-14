@@ -25,17 +25,14 @@ export default function Projects() {
     (project) => project.featured
   );
 
-  const otherProjects = projects.filter(
-    (project) => !project.featured
-  );
 
   const filteredProjects = useMemo(() => {
-    if (selected === "All") return otherProjects;
+    if (selected === "All") return projects;
 
-    return otherProjects.filter(
+    return projects.filter(
       (project) => project.domain === selected
     );
-  }, [selected, otherProjects]);
+  }, [selected]);
 
   return (
     <FadeIn delay={0.3}>

@@ -2,10 +2,96 @@ import { Project } from "@/types/projects";
 
 export const projects: Project[] = [
   {
+    slug: "skillgraph-ai",
+
+    title: "SkillGraph AI",
+
+    featured: true,
+
+    category: "Full Stack Web Application",
+
+    domain: "Developer Recommendation Platform",
+
+    github: "https://github.com/tariqaziz123/SkillGraph-AI",
+
+    live: "https://skillgraph-ai-frontend.onrender.com/",
+
+    backend: "https://skillgraph-ai-8bju.onrender.com/",
+
+    status: "Completed",
+
+    teamSize: "1 Developer",
+
+    duration: "August 2026",
+
+    client: "Personal Project",
+
+    image: "/projects/skillgraph-ai/cover.png",
+
+    overview:
+      "SkillGraph AI is a full-stack web application that helps users discover developers, explore their skills, projects, technologies, and companies, while providing graph-powered developer recommendations using a Neo4j-compatible graph database.",
+
+    problem:
+      "Traditional developer directories store data in relational formats, making it difficult to efficiently model and query relationships between developers, skills, technologies, companies, and projects for recommendation purposes.",
+
+    role:
+      "Designed and developed the complete application independently, including the Next.js frontend, Express.js REST API backend, graph database integration, deployment, and responsive user interface.",
+
+    solution:
+      "Built a graph-based developer recommendation platform using a Neo4j-compatible graph database to model relationships between developers, skills, projects, technologies, and companies. Implemented REST APIs with Express.js and a modern responsive frontend using Next.js and Tailwind CSS.",
+
+    impact:
+      "Demonstrates full-stack application development, graph database modeling, REST API design, TypeScript development, responsive UI implementation, and production deployment on Render.",
+
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "Neo4j Compatible Graph Database",
+      "Cypher",
+      "REST API",
+      "Render",
+      "GitHub",
+    ],
+
+    features: [
+      "Developer Directory",
+      "Developer Profile Page",
+      "Skill-based Search",
+      "Graph-powered Developer Recommendations",
+      "Projects Listing",
+      "Skills Directory",
+      "Technologies Directory",
+      "Companies Directory",
+      "Responsive Design",
+      "Loading States & Error Handling",
+    ],
+
+    challenges: [
+      "Designing graph relationships between developers, skills, projects, technologies, and companies",
+      "Writing efficient Cypher queries for recommendations",
+      "Integrating Next.js frontend with Express.js REST APIs",
+      "Handling server-side data fetching and loading states",
+      "Deploying frontend and backend on Render free tier",
+    ],
+
+    gallery: [
+      "/projects/skillgraph-ai/1.png",
+      "/projects/skillgraph-ai/2.png",
+      "/projects/skillgraph-ai/3.png",
+      "/projects/skillgraph-ai/4.png",
+      "/projects/skillgraph-ai/5.png",
+    ],
+  },
+
+  {
     slug: "musafir",
 
     title: "Musafir",
-    featured: true,
+    featured: false,
 
     category: "Travel Tech",
     domain: "Travel",

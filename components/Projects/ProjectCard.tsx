@@ -68,6 +68,42 @@ export default function ProjectCard({ project }: Props) {
           <p className="mt-4 line-clamp-3 leading-7 text-slate-400">
             {project.overview}
           </p>
+          <div className="mt-8 flex flex-wrap gap-4">
+
+  {project.live && (
+    <a
+      href={project.live}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="rounded-xl bg-cyan-500 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-400"
+    >
+      🌐 Live Demo
+    </a>
+  )}
+
+  {project.github && (
+    <a
+      href={project.github}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="rounded-xl border border-slate-700 px-6 py-3 transition hover:border-cyan-500 hover:text-cyan-400"
+    >
+      GitHub Repository
+    </a>
+  )}
+
+  {project.backend && (
+    <a
+      href={project.backend}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="rounded-xl border border-slate-700 px-6 py-3 transition hover:border-cyan-500 hover:text-cyan-400"
+    >
+      Backend API
+    </a>
+  )}
+
+</div>
 
           {/* Technologies */}
           <div className="mt-6 flex flex-wrap gap-2">
