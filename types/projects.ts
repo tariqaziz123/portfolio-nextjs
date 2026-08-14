@@ -27,7 +27,8 @@ export type Project = {
   github?: string;
   live?: string;
   backend?: string;
-
+  icon?: string;
+  gradient?: string;
   status?: string;
   teamSize?: string;
 };
