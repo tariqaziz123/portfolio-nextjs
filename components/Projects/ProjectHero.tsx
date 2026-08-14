@@ -95,15 +95,15 @@ export default function ProjectHero({
 
         <div className="relative  h-[420px] overflow-hidden bg-slate-950 p-8">
 
-  {project.image ? (
-    <Image
-      src={project.image}
-      alt={project.title}
-      fill
-      priority
-      className="object-contain p-4 transition duration-700 hover:scale-105"
-    />
-  ) : (
+          {project.image ? (
+            <Image
+              src={project.image}
+              alt={project.title}
+              fill
+              priority
+              className="object-contain p-6 transition duration-700 hover:scale-105"
+            />
+          ) : (
             <div
               className={`flex h-full items-center justify-center bg-gradient-to-r ${project.gradient}`}
             >
