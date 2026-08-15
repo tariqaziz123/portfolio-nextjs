@@ -11,6 +11,11 @@ export default function HeroButtons() {
         bg-cyan-500
         px-6
         py-3
+        flex
+        items-center
+        gap-2
+        text-sm
+        text-slate-900
         font-semibold
         transition-all
         duration-300

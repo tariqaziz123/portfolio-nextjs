@@ -35,8 +35,14 @@ export default function FeaturedProject({ project }: Props) {
               alt={project.title}
               priority
               fill
-              sizes="(max-width:1024px)100vw,50vw"
-              className="object-cover transition duration-700 group-hover:scale-105"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="
+        object-contain
+        p-6
+        transition
+        duration-700
+        group-hover:scale-105
+      "
             />
           ) : (
             <div className="flex h-full items-center justify-center bg-gradient-to-br from-cyan-500/20 via-blue-500/10 to-slate-900">
