@@ -11,8 +11,10 @@ export default function AboutImage() {
         <Image
           src="/images/profile.jpg"
           alt="Tariq Aziz"
+          priority
           width={450}
           height={550}
+          sizes="(max-width: 768px) 280px, 400px"
           className="object-cover"
         />
 
