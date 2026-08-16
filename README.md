@@ -1,36 +1,226 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tariq Aziz — Developer Portfolio
 
-## Getting Started
+<p align="center">
+  <a href="https://tariq-aziz-portfolio.vercel.app/">
+    <img src="https://img.shields.io/badge/Live%20Portfolio-06B6D4?style=for-the-badge&logo=vercel&logoColor=white" />
+  </a>
+  <a href="https://github.com/tariqaziz123">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="https://www.linkedin.com/in/tariq-aziz-b27132288">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+</p>
 
-First, run the development server:
+<p align="center">
+  A modern, responsive developer portfolio built with Next.js, TypeScript, and Tailwind CSS.
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌐 Live Portfolio
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### [Visit My Portfolio](https://tariq-aziz-portfolio.vercel.app/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The portfolio showcases my professional experience, technical skills, projects, certifications, and full-stack development work.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 👨‍💻 About
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+I'm **Tariq Aziz**, a Senior Frontend Engineer with **4.5+ years of professional experience** building enterprise web applications.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+My primary expertise includes:
 
-## Deploy on Vercel
+- React.js
+- Next.js
+- JavaScript
+- TypeScript
+- Frontend Architecture
+- REST APIs
+- Redux Toolkit
+- React Query
+- Material UI
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+I'm also expanding my full-stack expertise with:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Node.js
+- Express.js
+- MongoDB
+- Neo4j
+- Full-Stack Architecture
+
+---
+
+# ✨ Portfolio Features
+
+### 🏠 Modern Homepage
+
+A responsive landing page introducing my professional profile, technical expertise, and development experience.
+
+### 👨‍💻 About Section
+
+Provides an overview of my background, development experience, and engineering focus.
+
+### 🛠 Skills & Technologies
+
+Organized technical skills covering:
+
+- Frontend
+- Backend
+- Databases
+- UI Libraries
+- APIs
+- Testing
+- Development Tools
+
+### 💼 Professional Experience
+
+Highlights my experience working on enterprise applications and products, including:
+
+- Musafir
+- Data Template Infotech projects
+- Financial services applications
+- Analytics platforms
+- Real-time collaboration applications
+
+### 🚀 Project Showcase
+
+Interactive project cards and detailed case-study pages showcasing my development work.
+
+Featured projects include:
+
+- SkillGraph AI
+- Musafir
+- TechnoPro Capability Radar
+- Newcleus Wealth Management Platform
+- Whiteboard.chat
+
+### 🧠 SkillGraph AI Case Study
+
+The portfolio includes a dedicated case-study page for my full-stack **SkillGraph AI** project.
+
+The project demonstrates:
+
+- Next.js
+- TypeScript
+- Node.js
+- Express.js
+- Neo4j
+- REST APIs
+- Graph-based data modeling
+
+### 📱 Responsive Design
+
+The portfolio is designed to work across:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile
+
+### 🌙 Modern UI
+
+Includes:
+
+- Dark/light theme
+- Smooth animations
+- Interactive components
+- Responsive layouts
+- Hover effects
+- Modern card-based UI
+
+### 📄 Resume
+
+A dedicated resume download/access option for recruiters and hiring managers.
+
+### 📬 Contact
+
+Provides direct ways to connect through:
+
+- Email
+- LinkedIn
+- GitHub
+
+---
+
+# 🧰 Tech Stack
+
+## Frontend
+
+<p>
+  <img src="https://skillicons.dev/icons?i=nextjs,react,ts,tailwind&perline=4" />
+</p>
+
+- Next.js
+- React.js
+- TypeScript
+- Tailwind CSS
+- JavaScript
+- HTML5
+- CSS3
+
+## UI & Styling
+
+- Tailwind CSS
+- Responsive Design
+- Custom UI Components
+- CSS Animations
+- Framer Motion
+
+## Development
+
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,npm&perline=4" />
+</p>
+
+- Git
+- GitHub
+- VS Code
+- npm
+
+## Deployment
+
+- Vercel
+
+---
+
+# 📂 Project Structure
+
+```text
+portfolio/
+│
+├── public/
+│   ├── images/
+│   ├── icons/
+│   └── resume/
+│
+├── src/
+│   │
+│   ├── app/
+│   │   ├── about/
+│   │   ├── projects/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   └── not-found.tsx
+│   │
+│   ├── components/
+│   │   ├── About/
+│   │   ├── Contact/
+│   │   ├── Experience/
+│   │   ├── Hero/
+│   │   ├── Projects/
+│   │   ├── Skills/
+│   │   ├── Common/
+│   │   └── CTA/
+│   │
+│   ├── data/
+│   │
+│   ├── types/
+│   │
+│   └── ...
+│
+├── package.json
+├── next.config.ts
+├── tsconfig.json
+└── README.md
