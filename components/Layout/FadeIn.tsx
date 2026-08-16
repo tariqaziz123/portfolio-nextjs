@@ -14,23 +14,18 @@ export default function FadeIn({
 }: FadeInProps) {
   return (
     <motion.div
-      initial={{
-        opacity: 0,
-        y: 40,
-      }}
-      whileInView={{
-        opacity: 1,
-        y: 0,
-      }}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{
         once: true,
-        amount: 0.2,
+        amount: 0.05,
       }}
       transition={{
-        duration: 0.7,
+        duration: 0.6,
         delay,
         ease: "easeOut",
       }}
+      className="w-full"
     >
       {children}
     </motion.div>
